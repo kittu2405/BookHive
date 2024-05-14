@@ -1,0 +1,503 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600&display=swap");
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(38, 92%, 58%);
+  --first-color-light: hsl(38, 100%, 78%);
+  --first-color-alt: hsl(32, 75%, 50%);
+  --second-color: hsl(195, 75%, 52%);
+  --dark-color: hsl(212, 40%, 12%);
+  --white-color: hsl(212, 4%, 95%);
+  --body-color: hsl(212, 42%, 15%);
+  --container-color: hsl(212, 42%, 20%);
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Bai Jamjuree", sans-serif;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: 1rem;
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+
+
+
+.logo {
+  color: #fff;
+  /* Change to auto for responsiveness */
+  color: white;
+}
+
+.cart{
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+}
+
+/*=============== CARD ===============*/
+ /* .category {
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.card__container {
+  border: 2px solid red;
+  
+
+.card__content {
+  border: 2px solid yellow;
+ 
+}  */
+
+.heading1{
+  margin-left: 5vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-size: 2rem;
+}
+.cards {
+  /* border: 2px solid pink; */
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  
+}
+
+.card__article {
+  border: 2px solid green;
+  height: 500px;
+  max-width: 340px;
+  margin: 10px 10px 20px 15px;
+  background-color: white;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.card__image{
+  position: relative;
+  height: 300px;
+}
+.card__img{
+  border-radius: 1.5rem 1.5rem 0 0;
+  position: relative;
+  z-index: 5;
+  max-height: 300px;
+  width: 100%;
+}
+.card__data{
+  height: 200px;
+  margin: 1rem;
+  color: black;
+  position: relative;
+  text-align: center;
+}
+
+
+
+
+
+
+.top_button{
+  height: 10vh;
+  width: 100%;
+  /* background-color: #3586ff; */
+  color: #fff;
+  /* text-decoration-color: #fff; */
+  text-align: center;
+  margin-top: 3vh;
+  font-size: 2rem;
+}
+
+footer{
+  position: relative;
+  width: 100%;
+  min-height: 100px;
+  background: #3586ff;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+footer .social__icon,
+footer .menu
+{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+footer .social__icon li,
+footer .menu li
+{
+  list-style: none;
+
+}
+
+footer .social__icon li a{
+  font-size: 2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transform: 0.5s;
+}
+
+footer .social__icon li a:hover{
+  transform: translateY(-10px);
+}
+
+footer .menu li a{
+  font-size: 1.2em;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transform: 0.5s;
+  opacity: 0.75;
+}
+
+footer .menu li a:hover{
+  opacity: 1;
+}
+
+footer p{
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+}
+footer .wave{
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(assets/wave.png);
+  background-size: 1000px 100px;
+}
+
+footer .wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animatewave 4s linear infinite;
+}
+
+footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animatewave2 4s linear infinite;
+}
+
+footer .wave#wave3{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animatewave3 3s linear infinite;
+}
+
+footer .wave#wave4{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animatewave4 3s linear infinite;
+}
+
+@keyframes animatewave{
+  0%{
+    background-position-x: 1000px;
+  }
+  100%{
+    background-position-x: 0;
+  }
+}
+
+@keyframes animatewave2{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animatewave3{
+  0%{
+    background-position-x: 1000px;
+  }
+  100%{
+    background-position-x: 0;
+  }
+}
+
+@keyframes animatewave4{
+  0%{
+    background-position-x: 0;
+  }
+  100%{
+    background-position-x: 1000px;
+  }
+}
+
+
+
+
+/*=============== CSS of products page starts HERE ===============*/
+
+.product_container{
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  color: black;
+  height: auto;
+}
+
+.column_left{
+  /* border: 2px solid yellow; */
+  background-color: #fff;
+  flex-basis: 25%;
+  flex-grow: 0;
+  height: auto;
+  padding: 20px;
+  
+}
+
+.column_right{
+  /* border: 2px solid red; */
+  /* background-color: chartreuse; */
+  flex-basis: 75%;
+  flex-grow: 0;
+  min-height: fit-content;
+  padding: 0;
+  background: #fff;
+}
+
+.filter{
+  margin-left: 20px;
+  text-decoration: underline;
+}
+
+.filter_category{
+  /* border: 1px solid black; */
+  margin-top: 2.5rem;
+}
+.filter_category li{
+  /* border: 1px solid black; */
+  list-style: none;
+  margin-right: 5rem;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.filter_category li:hover{
+  cursor: pointer;
+}
+
+.pro{
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  /* background: #fff;
+  color: black; */
+}
+
+.product{
+  height: 50vh;
+  /* border: 2px solid pink; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.product:hover{
+  cursor: pointer;
+}
+
+.product_image{
+  margin-left: 0;
+  
+  /* border: 1px solid rgb(60, 255, 0); */
+  height: 100%;
+  width: 20%;
+  /* background-image: url(assets/3_body_problem.png); */
+  background-size: cover; /* Scale the background image to cover the entire container */
+  background-position: center; /* Position the background image at the center */
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.product_detail{
+  /* border: 2px solid orange; */
+  width: 80%;
+  padding: 1.5rem;
+}
+
+
+.mrp{
+  font-size: large;
+}
+
+
+/*=============== CSS of cart page starts HERE ===============*/
+
+.cart_container{
+  /* border: 2px solid yellow; */
+  display: flex;
+  margin: 1.5rem 3rem 1.5rem 3rem;
+  width: auto;
+  height: 35rem;
+  color: black;
+  background-image: linear-gradient(to right,rgba(191, 243, 238, 0.875), rgba(89, 174, 232, 0.88));
+}
+
+.cart_heading{
+  padding-left: 2rem;
+  padding-top: 0.5rem;
+}
+
+.container_left{
+  /* border: 2px solid blue; */
+  flex-basis: 60%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+.cart_heading{
+  /* border: 2px solid skyblue; */
+  height: 10%;
+  width: 100%;
+}
+
+.item1{
+  /* border: 2px solid green; */
+  height: 45%;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.item_image{
+  /* border: 2px solid wheat; */
+  padding: 1rem;
+  height: 100%;
+  width: 30%;
+}
+
+.item_detail{
+  /* border: 2px solid gold; */
+  height: 100%;
+  width: 30%;
+  padding: 1rem;
+}
+
+.item_num{
+  /* border: 2px solid purple; */
+  height: 100%;
+  width: 40%;
+  
+  padding-left: 2.5rem; 
+  justify-items: center;
+  align-content: center;
+}
+
+.item_image img{
+  max-height: 100%;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.container_right{
+  /* border: 2px solid pink; */
+  flex-basis: 40%;
+  border-left: 1px solid #fff;
+  align-content: center;
+  justify-items: center;
+  
+}
+
+.container_right caption{
+  color: #fff;
+  font-size: 40px;
+
+}
+
+
+
+.order_summary{
+  padding-top: 3rem;
+  padding-left: 1rem;
+  height: auto;
+}
+
+ion-icon {
+  font-size: 32px;
+}
+
+.order_summary_table{
+  /* border: 2px solid black; */
+  height: 50%;
+  padding-left: 2rem;
+}
+
+table {
+  height: 100%;
+  width: 90%; /* Set the table width to 100% of its container */
+  border-collapse: collapse; /* Collapse table borders */
+  font-size: 20px; /* Set font size */
+  
+}
+
+/* Style for table header */
+th {
+  background-color: #f2f2f2; /* Light gray background color */
+  border: 1px solid #000; /* Border style */
+  padding: 10px; /* Padding inside table cells */
+  text-align: left; /* Align text to the left */
+}
+
+/* Style for table rows */
+td {
+  border: 1px solid #000; /* Border style */
+  padding: 10px; /* Padding inside table cells */
+}

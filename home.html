@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-commerce Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ==============header menu section starts here============== -->
+    <section class="header_menu" id="header_menu">
+        <div class="container-fluid px-0 shadow">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 ">
+                <a class="navbar-brand pl-5 pl-small-0" href="home.html">
+                    <img src="assets/logo.jpeg" class="img img-fluid logo" width="100px" alt="logo"
+                        style="padding-left: 1rem;">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="category.html">Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+
+                    </ul>
+                    <div class="search mr-3">
+                        <a href="search.html" class="btn btn-sm btn-outline-primary">
+                            Search
+                        </a>
+                    </div>
+                    <div class="cart">
+                        <a href="cart.html">
+                            <ion-icon name="cart"></ion-icon>
+                            <span class="badge badge-pill badge-primary"></span>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- ==============header menu section ends here============== -->
+
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/sslide1.jpg" class="d-block w-100" alt="..." style="max-height: 100vh;">
+                <div class="carousel-caption d-none d-md-block" style="color: #000;">
+                    <h3>Welcome to BookHive</h3>
+                    <p>The Best Online Bookstore</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/sslide2.jpg" class="d-block w-100" alt="..." style="max-height: 100vh;">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3>Welcome to BookHive</h3>
+                    <p>The Best Online Bookstore</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="assets/sslide3.jpg" class="d-block w-100" alt="..." style="max-height: 100vh;">
+                <div class="carousel-caption d-none d-md-block" style="color: #000;">
+                    <h3>Welcome to BookHive</h3>
+                    <p>The Best Online Bookstore</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <a href="category.html">
+
+        <section class="category">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="heading1">
+                        <h2>Genre</h2>
+                    </div>
+                    <div class="cards swiper-wrapper">
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/scifi.jpeg" alt="card image" class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Science Fiction</h3>
+                                <p class="card__description">Dive into the realms of the unknown with our captivating
+                                    collection of science fiction novels.
+
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/M&T.jpeg" alt="card image">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Mystery & Thriller</h3>
+                                <p class="card__description">Prepare for heart-pounding suspense and thrilling plot
+                                    twists
+                                    with our selection of mystery and thriller novels.
+
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/adventure.jpeg" alt="card image">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Adventure</h3>
+                                <p class="card__description">From daring explorers to intrepid heroes, these stories
+                                    will
+                                    transport you to exciting new worlds filled with danger, discovery, and the thrill
+                                    of
+                                    the unknown.
+
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/comics.jpeg" alt="card image">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Comics</h3>
+                                <p class="card__description">Immerse yourself in the colorful worlds of superheroes,
+                                    villains, and everyday heroes, where every panel brings excitement, humor, and
+                                    unforgettable adventures.
+
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/romantic.jpeg" alt="card image">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Romance</h3>
+                                <p class="card__description">From passionate encounters to sweeping love stories, lose
+                                    yourself in the heartwarming connections, and irresistible chemistry that will leave
+                                    you
+                                    swooning.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/biography.jpg" alt="card image">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Biography</h3>
+                                <p class="card__description">Discover the fascinating lives of remarkable individuals,
+                                    from
+                                    historical figures to modern icons, through captivating biographical accounts.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/classics.jpg" alt="card image">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Classics</h3>
+                                <p class="card__description">Explore timeless literary masterpieces that have stood the
+                                    test
+                                    of time, offering profound insights into the human condition and enduring relevance.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/novels.webp" alt="card image">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Novels</h3>
+                                <p class="card__description">Embark on immersive journeys through the art of
+                                    storytelling,
+                                    where characters come to life, and plots unfold in rich and diverse narratives.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </a>
+
+    <a href="products.html">
+        <section class="category">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="heading1">
+                        <h2>Latest Books</h2>
+                    </div>
+                    <div class="cards swiper-wrapper">
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/dune.jpeg" alt="card image" class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Dune</h3>
+                                <p class="card__description">Set on the desert planet Arrakis, Dune is the story of the
+                                    boy
+                                    Paul Atreides, heir to a noble family tasked with ruling an inhospitable world .
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/wings_of_fire.jpg" alt="card image"
+                                    class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Wings of Fire</h3>
+                                <p class="card__description">Wings of Fire, is the autobiography of the Missile Man of
+                                    India
+                                    and the former President of India, Dr. A. P. J. Abdul Kalam..
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/watchman.jpeg" alt="card image" class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Watchman</h3>
+                                <p class="card__description">Considered the greatest graphic novel in the history of the
+                                    medium, the Hugo Award-winning story chronicles the fall from grace of a group of
+                                    superheroes plagued by all-too-human failings.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/a_beautiful_mind.jpeg" alt="card image"
+                                    class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">A Beautiful Mind</h3>
+                                <p class="card__description">The powerful, dramatic biography of math genius John Nash,
+                                    who
+                                    overcame serious mental illness and schizophrenia to win the Nobel Prize.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </a>
+
+    <a href="products.html">
+        <section class="features">
+            <div class="card__container swiper">
+                <div class="card__content">
+                    <div class="heading1">
+                        <h2>Features</h2>
+                    </div>
+                    <div class="cards swiper-wrapper">
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/batman_1.jpeg" alt="card image" class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Batman: Year One</h3>
+                                <p class="card__description">In his first year on the job, Batman feels his way around a
+                                    Gotham City far darker than the one he left.
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/to_kill_a_moking_bird.jpeg" alt="card image"
+                                    class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">To Kill a Mockingbird</h3>
+                                <p class="card__description">To Kill a Mockingbird is both a young girl's coming-of-age
+                                    story and a darker drama about the roots and consequences of racism and prejudice.
+
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/the_martian.jpeg" alt="card image" class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">The Martian</h3>
+                                <p class="card__description">Set against the barren backdrop of Mars, this novel takes
+                                    readers on a gripping journey of survival, ingenuity, and the unbreakable spirit of
+                                    the
+                                    human mind.
+
+                                </p>
+                            </div>
+                        </article>
+
+                        <article class="card__article swiper-slide">
+                            <div class="card__image">
+                                <img class="card__img" src="assets/steve_jobs.jpeg" alt="card image" class="card__img">
+                            </div>
+                            <div class="card__data">
+                                <h3 class="card__name">Steve Jobs</h3>
+                                <p class="card__description">Steve Jobs is the authorized self-titled biography of
+                                    American
+                                    business magnate and Apple co-founder Steve Jobs.
+
+                                </p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </a>
+
+    <div class="top_button">
+        <a href="home.html">
+            <p>Scroll to top</p>
+        </a>
+    </div>
+
+    <footer>
+        <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social__icon">
+            <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="category.html">Services</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="contact.html">contact</a></li>
+        </ul>
+        <p>©2024 E-Book Store | All Rights Reserved</p>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
